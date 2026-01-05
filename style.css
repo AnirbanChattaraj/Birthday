@@ -1,0 +1,203 @@
+
+    *{margin:0; padding:0; box-sizing:border-box;}
+    body{
+        background:#ECEEDF; 
+        overflow-x:hidden;
+    }
+
+    /* Header */
+    header{
+        background:#BBDCE5;
+        padding:35px;
+        text-align:center;
+        box-shadow:0 6px 20px rgba(0,0,0,0.22);
+    }
+    header h1{
+        font-family:"Cinzel", serif;
+        font-size:55px;
+        font-weight:800;
+        letter-spacing:2px;
+        color:#2a2a2a;
+        animation:glow 3s infinite alternate ease-in-out;
+    }
+    @keyframes glow{
+        from{ text-shadow:0 0 8px rgba(255,255,255,0.4); }
+        to{ text-shadow:0 0 20px rgba(255,255,255,0.9); }
+    }
+
+    .birthday-body{
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(16px) saturate(160%);
+        -webkit-backdrop-filter: blur(16px) saturate(160%);
+        border-radius: 22px;
+        border: 2px solid rgba(255, 255, 255, 0.45);
+        max-width: 950px;
+        margin: 55px auto;
+        padding: 50px 40px;
+        text-align: center;
+        position: relative;
+        animation: glowPulse 4s infinite alternate ease-in-out;
+        box-shadow: 0 0 28px rgba(255, 139, 0, 0.55), 0 0 62px rgba(255, 60, 0, 0.25);
+    }
+    @keyframes glowPulse {
+        0% { box-shadow: 0 0 18px rgba(255, 119, 0, 0.45), 0 0 42px rgba(255, 60, 0, 0.25); }
+        100% { box-shadow: 0 0 38px rgba(255, 155, 0, 0.85), 0 0 85px rgba(255, 68, 0, 0.48); }
+    }
+    .birthday-body::before {
+        content:"";
+        position:absolute;
+        inset:0;
+        border-radius:22px;
+        padding:2px;
+        background:linear-gradient(110deg, #ffcf99, #ffb37b, #ff9d68, #ffc999);
+        -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: exclude;
+        animation:borderGlow 5s infinite linear;
+    }
+    @keyframes borderGlow {
+        0%{ filter:hue-rotate(0deg); }
+        100%{ filter:hue-rotate(360deg); }
+    }
+
+    .title{
+        font-family:"Great Vibes", cursive;
+        font-size:55px;
+        color:#704a42;
+        margin-bottom:20px;
+    }
+    .message{
+        font-family:"Montserrat", sans-serif;
+        font-size:22px;
+        line-height:1.75;
+        color:#3a2d28;
+        font-weight:500;
+    }
+    .highlight{
+        font-family:"Cinzel", serif;
+        font-size:27px;
+        font-weight:700;
+        color:#5f3b32;
+        display:block;
+        margin-top:30px;
+        letter-spacing:1px;
+    }
+    .signature{
+        margin-top:40px;
+        font-family:"Great Vibes", cursive;
+        font-size:42px;
+        color:#704a42;
+    }
+
+    /* SAFE Cake Icon */
+    .cake{
+        width:260px;
+        margin:32px auto 0;
+        display:block;
+        filter:drop-shadow(0 4px 10px rgba(0,0,0,0.25));
+    }
+
+    /* Falling Flowers */
+    .flower{
+        position:fixed;
+        top:-50px;
+        font-size:28px;
+        animation:fall linear infinite;
+        pointer-events:none;
+    }
+    @keyframes fall{
+        0%{transform:translateY(0) rotate(0deg); opacity:1;}
+        100%{transform:translateY(100vh) rotate(360deg); opacity:0;}
+    }
+
+    /* Glitter */
+    .glitter{
+        position:fixed;
+        width:6px;
+        height:6px;
+        background:gold;
+        border-radius:50%;
+        animation:glit 2s infinite ease-out;
+        pointer-events:none;
+    }
+    @keyframes glit{
+        0%{opacity:1; transform:translateY(0);}
+        100%{opacity:0; transform:translateY(200px);}
+    }
+
+    /* 🎵 Play Music Button */
+    #playBtn{
+        position:fixed;
+        bottom:25px;
+        right:25px;
+        padding:14px 28px;
+        font-size:18px;
+        background:#ff7b9c;
+        color:white;
+        border:none;
+        border-radius:14px;
+        cursor:pointer;
+        box-shadow:0 0 14px rgba(0,0,0,0.25);
+        transition:0.3s;
+        z-index:9999;
+    }
+    #playBtn:hover{
+        transform:scale(1.05);
+        box-shadow:0 0 16px rgba(0,0,0,0.35);
+    }
+/* Slideshow Box */
+.slideshow-box {
+    width: 65%;                /* reduced width */
+    max-width: 600px;          /* reduced max size */
+    margin: 35px auto;
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 0 22px rgba(0,0,0,0.25);
+}
+.slides img {
+    height: 350px;             /* smaller height */
+    object-fit: cover;
+    width: 100%;
+    border-radius: 18px;
+}
+
+
+/* Each Slide */
+.slides {
+    display: none;
+}
+.slides img{
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+/* Fade Animation */
+.fade {
+    animation: fadeEffect 1.4s;
+}
+@keyframes fadeEffect {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+/* Controls */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 14px;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+    transition: 0.4s;
+}
+.prev { left: 12px; }
+.next { right: 12px; }
+.prev:hover, .next:hover {
+    color: #ffd9d9;
+    transform: translateY(-50%) scale(1.1);
+}
