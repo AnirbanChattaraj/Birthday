@@ -27,3 +27,13 @@ Optimized for mobile, tablet, and desktop screens
 
 Minimal yet premium birthday aesthetics
 
+
+🛠️ Technologies Used
+
+HTML5 – Structure and content
+
+CSS3 – Styling, layout, animations, and responsiveness
+
+JavaScript – Music control and slideshow functionality
+
+Google Fonts – Premium typography
