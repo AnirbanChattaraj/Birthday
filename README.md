@@ -38,4 +38,4 @@ JavaScript – Music control and slideshow functionality
 
 Google Fonts – Premium typography
 
-Author>>
+Author>>Anirban Chattaraj
