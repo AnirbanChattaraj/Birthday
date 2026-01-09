@@ -37,3 +37,5 @@ CSS3 – Styling, layout, animations, and responsiveness
 JavaScript – Music control and slideshow functionality
 
 Google Fonts – Premium typography
+
+Author>>
