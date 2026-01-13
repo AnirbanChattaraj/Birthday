@@ -1,7 +1,7 @@
 A premium, elegant, and emotionally crafted birthday webpage dedicated to celebrating a beloved elder sister.
 This project combines modern web technologies with heartfelt storytelling, smooth animations, background music, and an image slideshow to create a memorable digital experience.
 
-✨ Features
+✨ Features:-
 
 🎶 Background Birthday Music
 
