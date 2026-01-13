@@ -3,7 +3,7 @@ This project combines modern web technologies with heartfelt storytelling, smoot
 
 ✨ Features:-
 
-🎶 Background Birthday Music
+🎶 Background Birthday Music:
 
 Play button to start looping birthday music
 
@@ -11,15 +11,15 @@ Play button to start looping birthday music
 
 Emotionally rich and beautifully formatted content
 
-🖼️ Image Slideshow
+🖼️ Image Slideshow:
 
 Smooth fade animation with previous/next navigation
 
-🎨 Premium Fonts
+🎨 Premium Fonts:
 
 Google Fonts: Cinzel, Great Vibes, Montserrat
 
-📱 Responsive Design
+📱 Responsive Design:
 
 Optimized for mobile, tablet, and desktop screens
 
