@@ -28,7 +28,7 @@ Optimized for mobile, tablet, and desktop screens
 Minimal yet premium birthday aesthetics
 
 
-🛠️ Technologies Used
+🛠️ Technologies Used:-
 
 HTML5 – Structure and content
 
